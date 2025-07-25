@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Craft Idea Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Terminal Craft</h1>
+            <p class="subtitle">Project Idea Generator</p>
+             </header>
+        <div class="rules-section">
+            <h2>Terminal Craft Challenge Rules</h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <span>Build a terminal app that solves a real problem</span>
+                </div>
+                <div class="rule-card">
+                    <span>Get at least 10 users to test your app</span>
+                </div>
+                <div class="rule-card">
+                    <span>Make your project open-source</span>
+                </div>
+                <div class="rule-card">
+                    <span>Must support Unix platforms</span>
+                </div>
+                <div class="rule-card">
+                    <span>Include screenshots or demos</span>
+                </div>
+                <div class="rule-card">
+                    <span>App must be self-contained</span>
+                </div>
+                <div class="rule-card">
+                    <span>Provide clear build instructions</span>
+                </div>
+                <div class="rule-card">
+                    <span>No remakes of existing tools</span>
+                </div>
+                <div class="rule-card">
+                    <span>No simple wrappers around other tools</span>
+                </div>
+            </div>
+        </div>
+        <div class="language-selection">
+            <h2>Choose Your Tech Stack</h2>
+            <div class="language-controls">
+                <button type="button" id="selectAllBtn" class="control-btn">
+                    Select All
+                </button>
+                <button type="button" id="clearAllBtn" class="control-btn">
+                    Clear All
+                </button>
+                <button type="button" id="selectPopularBtn" class="control-btn">
+                    Popular
+                </button>
+            </div>
+            <div class="language-grid">
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="rust" checked>
+                    <span class="language-card">
+                        <strong>Rust</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="go" checked>
+                    <span class="language-card">
+                        <strong>Go</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="python">
+                    <span class="language-card">
+                        <strong>Python</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="cpp">
+                    <span class="language-card">
+                        <strong>C++</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="c">
+                    <span class="language-card">
+                        <strong>C</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="zig">
+                    <span class="language-card">
+                        <strong>Zig</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="nim">
+                    <span class="language-card">
+                        <strong>Nim</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="crystal">
+                    <span class="language-card">
+                        <strong>Crystal</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="deno">
+                    <span class="language-card">
+                        <strong>Deno</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="kotlin">
+                    <span class="language-card">
+                        <strong>Kotlin</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="dart">
+                    <span class="language-card">
+                        <strong>Dart</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="julia">
+                    <span class="language-card">
+                        <strong>Julia</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="haskell">
+                    <span class="language-card">
+                        <strong>Haskell</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="ocaml">
+                    <span class="language-card">
+                        <strong>OCaml</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="swift">
+                    <span class="language-card">
+                        <strong>Swift</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="dlang">
+                    <span class="language-card">
+                        <strong>D</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="vlang">
+                    <span class="language-card">
+                        <strong>V</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="odin">
+                    <span class="language-card">
+                        <strong>Odin</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="elixir">
+                    <span class="language-card">
+                        <strong>Elixir</strong>
+                    </span>
+                </label>
+                <label class="language-option">
+                    <input type="checkbox" name="language" value="erlang">
+                    <span class="language-card">
+                        <strong>Erlang</strong>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="project-type-selection">
+            <h2>Type of Project</h2>
+            <div class="project-type-grid">
+                <label class="project-type-option">
+                    <input type="radio" name="projectType" value="tools" checked>
+                    <span class="project-type-card">
+                        <strong>Tools</strong>
+                        <p>Utilities and productivity applications</p>
+                    </span>
+                </label>
+                <label class="project-type-option">
+                    <input type="radio" name="projectType" value="games">
+                    <span class="project-type-card">
+                        <strong>Games</strong>
+                        <p>Interactive entertainment and puzzles</p>
+                    </span>
+                </label>
+                <label class="project-type-option">
+                    <input type="radio" name="projectType" value="others">
+                    <span class="project-type-card">
+                        <strong>Others</strong>
+                        <p>Custom project idea or specific vision</p>
+                    </span>
+                </label>
+            </div>
+            <div class="custom-idea-section" id="customIdeaSection" style="display: none;">
+                <h3>Describe Your Project Idea</h3>
+                <textarea 
+                    id="customIdeaInput" 
+                    placeholder="Describe your project idea in detail. What problem does it solve? What features should it have? What makes it unique? The more details you provide, the better roadmap we can create for you."
+                    rows="4"></textarea>
+                <p class="custom-idea-hint">We'll transform your idea into a detailed roadmap with features, technical requirements, and implementation steps.</p>
+            </div>
+        </div>
+        <div class="generator-section">
+            <button id="generateBtn" class="generate-btn">
+                Craft New Project Idea
+            </button>
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Crafting your unique terminal project idea...</p>
+            </div>
+        </div>
+        <div class="ideas-container" id="ideasContainer">
+        </div>
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-number" id="totalIdeas">0</span>
+                <span class="stat-label">Ideas Crafted</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="sessionIdeas">0</span>
+                <span class="stat-label">This Session</span>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Powered by Terminal Craft Community</p>
+            <div class="github-link">
+                <span>Share your crafted projects on GitHub!</span>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
